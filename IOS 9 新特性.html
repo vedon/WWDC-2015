@@ -1,0 +1,496 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>IOS 9 新特性</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+</head>
+<body>
+<h1 id="toc_0">WWDC 2015 videos</h1>
+
+<p>2015 年WWDC 所有的视频链接：
+<a href="https://developer.apple.com/videos/wwdc/2015/">2015 WWDC</a></p>
+
+<h4 id="toc_1">我觉得可用于项目的未使用的技术有：</h4>
+
+<ul>
+<li><a href="#1">App Thinning</a></li>
+<li><a href="#2">Network with NSURLSession</a></li>
+<li><a href="#3">UI Testing</a></li>
+<li><a href="#4">UIKit Dynamics</a></li>
+</ul>
+
+<h1 id="1"></h1>
+
+<h2 id="toc_2">App Thinning</h2>
+
+<h3 id="toc_3">App Slicing</h3>
+
+<p>这一项功能只针对iOS 平台，Slicing就是创造并传输为不同目标设备而设计的变体应用包（variant,以下简称定制化下载包）的处理过程。<strong>一个定制化下载包仅包含针对特定设备所需要的可执行架构以及资源</strong>。你可以继续开发并且把完整版本的应用上传到iTunes Connect，然后App Store会根据玩家设备类型和分辨率创造并传输对应的应用。这里，你可以认为资源根据玩家设备分辨率和类型的不同而分割成了多种类型，GPU资源也根据设备能力进行了切分，当用户安装应用的时候，他们可以下载并安装适合自己设备的定制化应用包。<strong>基本上来说项目里面用了Assets.xcassets就支持这个功能了</strong>
+<img src="./resource/Screen%20Shot%202015-06-18%20at%202.57.20%20PM.png" alt="App Slicing Screenshot"></p>
+
+<hr>
+
+<h3 id="toc_4">On-Demand Resources(ODR)</h3>
+
+<p>On-Demand资源指的是你可以通过关键词和命令的方式进行分组归类的资源，比如图像和音频，App Store会把这些资源放在苹果服务器上并且为你管理下载。On-Demand资源可以加快下载速度并缩小应用包体，提高用户的首次登录体验。比如，一款游戏应用可以根据等级和任务的不同把资源分组，在玩家达到下一个等级或者完成一个任务之后才会用到后续的资源，同样，应用也可以只在用户进行IAP购买的时候提供对应的资源。</p>
+
+<p>当一些on-demand资源不再需要而且磁盘空间较少的时候，操作系统会自动清除它们。如果你在App Store之外对自己的应用进行测试或者分发，那就需要你自己来管理这些On-Demand资源。需要注意的是，可执行的on-demand资源是不支持的，App Store也会对on-Demand资源进行分割（即上面说过的Slicing），进一步提高用户体验。</p>
+
+<p>对于用户们来说，on-demand资源是以透明的形式在后台运作的，当用户需要对应功能的时候，这些资源就会被提供。</p>
+
+<p><a href="https://developer.apple.com/library/prerelease/watchos/documentation/Foundation/Reference/NSBundleResourceRequest_Class/index.html#//apple_ref/doc/uid/TP40015084">如何配置ODR</a>.</p>
+
+<p><img src="./resource/Screen%20Shot%202015-06-18%20at%202.57.26%20PM.png" alt="On-Demand Resources Screenshot"></p>
+
+<hr>
+
+<h3 id="toc_5">BitCode</h3>
+
+<p>Bitcode是一个已编译程序（Compiled Program）的中间代码（intermediate representation）。如果你上传到iTunes Connect里的应用包含bitcode的话，就可以被编译和链接到App Store。加入Bitcode可以让苹果在未来对你的应用二进制（app binary）进行再次优化，而不需要你向App Store提交新版本。</p>
+
+<p>注意：对于iOS应用来说，Bitcode是默认但可选择的。如果你提供Bitcode，那么应用包里的所有应用和框架都需要加入Bitcode，而watchOS应用则必须加入Bitcode。</p>
+
+<h2 id="2"></h2>
+
+<h2 id="toc_6">Networking with NSURLSession</h2>
+
+<h3 id="toc_7">App Transport Security</h3>
+
+<blockquote>
+<ul>
+<li>不允许明文的http 链接</li>
+<li>鼓励使用更加安全的Https.</li>
+<li>默认使用安全的方式连接</li>
+<li>在 Info.plist 里可以添加自定义的网络安全配置。以下的配置就是允许媒体服务器使用不安全的链接。
+<img src="./resource/Screen%20Shot%202015-06-19%20at%203.38.33%20PM.png" alt="">
+<img src="./resource/Screen%20Shot%202015-06-19%20at%203.41.47%20PM.png" alt="">
+也可以制定允许任意的链接：NSAllowsArbitraryLoads = YES。aka Http &amp; Https。</li>
+</ul>
+</blockquote>
+
+<h3 id="toc_8">New protocol support in NSURLSession</h3>
+
+<p>Http 1.1 的缺点</p>
+
+<blockquote>
+<ul>
+<li>One outstanding request(在单位时间内只能处理一个链接，head-of-line blocking)</li>
+<li>HTTP pipelining (将多个HTTP请求整批提交的技术，而在发送过程中不需先等待服务端的回应)</li>
+<li>Mutiple connections </li>
+<li>Textual protocol overhead (处理换行，空格，大小写等带来的负荷)</li>
+<li>Header compression (请求头的压缩)</li>
+</ul>
+</blockquote>
+
+<p>因此，Http/2 is coming!!!NSURLSession 支持 HTTP/2 协议。向后兼容HTTP/1.1 。我们需要的是一个支持HTTP/2 的服务器。</p>
+
+<p><img src="./resource/Screen%20Shot%202015-06-19%20at%203.56.42%20PM.png" alt=""></p>
+
+<h3 id="toc_9">NSURLSession on watchOS</h3>
+
+<p><img src="./resource/Screen%20Shot%202015-06-19%20at%204.01.10%20PM.png" alt=""></p>
+
+<h3 id="toc_10">NSURLSession API changes</h3>
+
+<p>在iOS 9 ，苹果已经弃用NSURLConnection 。所以新特性都添加在NSURLSession。并且WatchOS 是不支持NSURLConnection的。</p>
+
+<h5 id="toc_11">New NSURLSession API</h5>
+
+<blockquote>
+<ul>
+<li>NSHTTPCookieStorage.允许 App 和 Extensions 间共享cookies。
+<img src="./resource/Screen%20Shot%202015-06-19%20at%204.08.14%20PM.png" alt=""></li>
+<li>NSURLSessionStreamTask
+<img src="./resource/Screen%20Shot%202015-06-19%20at%204.10.18%20PM.png" alt=""></li>
+</ul>
+</blockquote>
+
+<h3 id="3"></h3>
+
+<h2 id="toc_12">XCode 7 UI Testing</h2>
+
+<p>在开发领域里，测试一直是保障产品质量关键。从 Xcode 4 以来，测试在 app 开发中的地位可谓是逐年上升。从 XCT 框架的引入，到测试 target 成为新建项目时的默认，再到去年加入的异步代码测试和性能测试。可以说现在 Xcode 自带的测试框架已经能满足绝大部分单元测试的需求了。</p>
+
+<p>但是这并不够。开发一个 iOS app 从来都是更注重 UI 和用户体验的工作，而简单地单元测试可以很容易地保证 model 层的正确，却很难在 UI 方面有所作为。如何为一个 app 编写 UI 测试一直是 Cocoa 社区的难题之一。之前的话有像是 KIF，Automating，甚至是 FBSnapshotTestCase 这种脑洞大开的方案。今年 Apple 给出了一个更加诱人的选项，那就是 Xcode 自带的 XCUITest 的一系列工具。</p>
+
+<p>和大部分已有的 UI 测试工具类似，XCUI 使用 Accessibility 标记来确定 view，但因为是 Apple 自家的东西，它可以自动记录你的操作流程，所以你只需要书写最后的验证部分就可以了，比其他的 UI 测试工具方便很多。
+在Xcode 7 ，UI Testing 比之前InStruments 的UIAutomation 更加方便，好用。使用新的XCTest ，需要在project 新建一个UI Testing Bundle。</p>
+
+<p><img src="./resource/Screen%20Shot%202015-06-18%20at%203.46.19%20PM.png" alt="新建UI Testing Bundle"></p>
+
+<hr>
+
+<p>录制好脚本后，点击运行：</p>
+
+<p><img src="./resource/Screen%20Shot%202015-06-18%20at%204.39.24%20PM.png" alt="新建UI Testing Bundle"></p>
+
+<p><strong>参考链接</strong></p>
+
+<p><a href="http://www.mokacoding.com/blog/xcode-7-ui-testing/">Testing：Xcode 7 UI testing, a first look</a>.</p>
+
+<h4 id="4"></h4>
+
+<h2 id="toc_13">UIKit Dynamics</h2>
+
+<h3 id="toc_14">1）Collision Bounds</h3>
+
+<p>支持非矩形的碰撞,下图中表现出非矩形碰撞的效果。（不再是以前那种只能识别矩形区域的碰撞了）</p>
+
+<p><img src="./resource/Screen%20Shot%202015-06-19%20at%209.08.44%20AM.png" alt="">
+<img src="./resource/Screen%20Shot%202015-06-19%20at%209.05.35%20AM.png" alt=""></p>
+
+<h3 id="toc_15">2）UIDynamicItemGroup</h3>
+
+<p><img src="./resource/Screen%20Shot%202015-06-19%20at%208.47.15%20AM.png" alt=""></p>
+
+<h3 id="toc_16">3）UIFieldBehavior</h3>
+
+<p>任何添加到设置区域的UIView 对象都会被添加上该区域所附带的动画效果。</p>
+
+<p><img src="./resource/Screen%20Shot%202015-06-19%20at%208.50.25%20AM.png" alt="">
+<img src="./resource/UIFieldBehavior.gif" alt=""></p>
+
+<h3 id="toc_17">4）UIDynamicItemBehavior</h3>
+
+<p>DynamicItemBehivior属性：elasticity(弹性)，friction（摩擦力），density（密度），resistance（阻力），angularResistance (角度阻力)。
+<img src="./resource/Screen%20Shot%202015-06-19%20at%204.17.31%20PM.png" alt="">
+IOS 9新添加的属性：charge 和 anchored 。charge 影响你的item 在电磁场中的变现。</p>
+
+<h3 id="toc_18">5) UISnapBehavior</h3>
+
+<p><img src="./resource/Screen%20Shot%202015-06-19%20at%2010.07.06%20AM.png" alt=""></p>
+
+<p><img src="./resource/snap%20Behavior.gif" alt=""></p>
+
+<h3 id="toc_19">6) UIAttachmentBehavior</h3>
+
+<blockquote>
+<ul>
+<li>Distance Attachment
+<img src="./resource/Screen%20Shot%202015-06-19%20at%209.55.59%20AM.png" alt=""></li>
+<li>Limit Attachment
+<img src="./resource/Screen%20Shot%202015-06-19%20at%209.56.19%20AM.png" alt=""></li>
+<li>Fixed Attachment
+<img src="./resource/Screen%20Shot%202015-06-19%20at%209.56.28%20AM.png" alt=""></li>
+<li>Pin Attachment
+<img src="./resource/Screen%20Shot%202015-06-19%20at%209.57.15%20AM.png" alt=""></li>
+<li>Sliding Attachment
+<img src="./resource/Screen%20Shot%202015-06-19%20at%209.57.25%20AM.png" alt=""></li>
+</ul>
+</blockquote>
+
+<h3 id="toc_20">7) 调试动画的新方法</h3>
+
+<p><img src="./resource/Screen%20Shot%202015-06-19%20at%209.21.33%20AM.png" alt=""></p>
+
+<p>下面展示的是动画的区域。
+<img src="./resource/UIFieldBehavior.gif" alt=""></p>
+
+<h3 id="toc_21">8)UIVisualEffectView</h3>
+
+<p>可用于制作日间，夜间模式。
+<img src="./resource/Screen%20Shot%202015-06-19%20at%2010.36.22%20AM.png" alt=""></p>
+
+
+</body>
+
+</html>
