@@ -46,7 +46,8 @@ NSUserActivity 让用户更加容易的查看他们以往查看的内容。一�
 > * 1）**Allow Apple to discover and crawl an app’s website with the Applebot.**
 >
 >  在iTunes Connect 提交应用的时候，在 Support URL 和 Marketing URL 填写链接。苹果会根据你所提供的URL 来搜索内容。
-> <img src="./resource/Screen Shot 2015-06-24 at 11.16.47 AM.png" alt="" width = "590">
+> 
+> 	<img src="./resource/Screen Shot 2015-06-24 at 11.16.47 AM.png" alt="" width = "590">
 > 
 > * 2）**Ensure the app’s website has the Web markup for deep linking.**
 > <img src="./resource/Screen Shot 2015-06-24 at 11.21.47 AM.png" alt="" width = "590">
