@@ -12,7 +12,7 @@ On-Demand资源指的是你可以通过关键词和命令的方式进行分组�
 
 对于用户们来说，on-demand资源是以透明的形式在后台运作的，当用户需要对应功能的时候，这些资源就会被提供。
 
-[如何配置ODR](https://developer.apple.com/library/prerelease/watchos/documentation/Foundation/Reference/NSBundleResourceRequest_Class/index.html#//apple_ref/doc/uid/TP40015084).
+[如何配置ODR](https://developer.apple.com/library/prerelease/ios/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/Chapters/IntroToODR.html#//apple_ref/doc/uid/TP40015083-CH2-SW1).
 
 ![On-Demand Resources Screenshot](./resource/Screen Shot 2015-06-18 at 2.57.26 PM.png)
 ***
