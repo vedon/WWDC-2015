@@ -37,7 +37,7 @@ NSUserActivity 让用户更加容易的查看他们以往查看的内容。一�
 <img src="./resource/Screen Shot 2015-06-24 at 9.33.20 AM.png" alt="" width = "590">
 <img src="./resource/Screen Shot 2015-06-24 at 9.33.28 AM.png" alt="" width = "590">
 
-
+[**CoreSpotlight Demo**](https://github.com/vedon/WWDC-2015/tree/master/Demo)
 ### Web Markup 
 这项功能允许苹果和名为：Applebot search engine 的搜索服务器搜索与app 相关的内容，让用户更加容易的使用搜索功能。支持 "deep linking" and universal link .结合苹果的 Smart App Banners,Twitter Cards 和 Fackbook App Links.
 
