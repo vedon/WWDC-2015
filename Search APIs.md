@@ -23,7 +23,7 @@
 <img src="./resource/Screen Shot 2015-06-24 at 9.11.01 AM.png" alt="" width = "590">
 <img src="./resource/Screen Shot 2015-06-24 at 9.15.30 AM.png" alt="" width = "590">
 <img src="./resource/Screen Shot 2015-06-24 at 9.15.40 AM.png" alt="" width = "590">
-<img src="./resource/Screen Shot 2015-06-24 at 9.15.40 AM.png" alt="" width = "590">
+
 
 
 NSUserActivity 让用户更加容易的查看他们以往查看的内容。一方面开发者们也可以充分利用这个功能，更好展现自己的app,让用户体验做到更加好。
