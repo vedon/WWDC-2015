@@ -56,7 +56,7 @@ NSUserActivity 让用户更加容易的查看他们以往查看的内容。一�
 > <img src="./resource/Screen Shot 2015-06-24 at 11.25.15 AM.png" alt="" width = "590">
 > <img src="./resource/Screen Shot 2015-06-24 at 11.44.18 AM.png" alt="" width = "590">
 > 
-> [详情请查看Seamless Link to your App](./Seamless Linking to your app.html)
+> [详情请查看Seamless Link to your App](https://github.com/vedon/WWDC-2015/blob/master/Seamless%20Linking%20to%20your%20app.md)
 > 
 > * 3) **On the other end, make sure the app is set up to handle deep linking.**
 > <img src="./resource/Screen Shot 2015-06-24 at 11.45.50 AM.png" alt="" width = "590">
